@@ -182,7 +182,7 @@ export default function Page() {
 						<div className="mt-3">
 							<Button variation="primary">
 								{/* You can replace this # with a link to your paper if you have one */}
-								<a href="https://afterthesilence.org">Read Publications</a>
+								<a href="https://afterthesilence.org">Read Papers</a>
 							</Button>
 						</div>
 					</motion.div>

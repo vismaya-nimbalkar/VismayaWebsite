@@ -251,7 +251,7 @@ export default function Education() {
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.4 }}>
 						<h2 className="font-semibold text-xl mt-7">
-							Achievements & Publications
+							Achievements
 						</h2>
 						<p className="text-md font-normal mb-3 md:mb-6">
 							Selected research papers, certifications, and speaking honors.
