@@ -177,12 +177,12 @@ export default function Page() {
 							After The Silence
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							A social advocacy platform dedicated to LGBTQ+ rights and support. I provided comprehensive assistance to transgender individuals navigating the complex bureaucratic process of updating legal documents to reflect their correct name and gender identity. In addition to developing accessible, step-by-step instructional guides for the community, I conducted independent research and authored multiple published papers on LGBTQ+ advocacy.
+							A social advocacy platform dedicated to queer rights and support. Provided comprehensive assistance to queer individuals navigating the complex bureaucratic process of updating legal documents to reflect their correct name and gender identity. In addition to developing accessible, step-by-step instructional guides for the community, I conducted independent research and authored multiple research papers on queer advocacy.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
 								{/* You can replace this # with a link to your paper if you have one */}
-								<a href="#">Read Publications</a>
+								<a href="https://afterthesilence.org">Read Publications</a>
 							</Button>
 						</div>
 					</motion.div>

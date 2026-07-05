@@ -13,7 +13,7 @@ const experiences = [
 		type: "Advocacy",
 		location: "Pune, 411014",
 		description:
-			"Provided comprehensive support to transgender individuals navigating the process of updating legal documents to reflect their correct name and gender identity. Developed and distributed accessible, step-by-step instructional guides to streamline these complex bureaucratic procedures for the community. Additionally, conducted independent research and authored multiple published papers on LGBTQ+ rights and advocacy for the After The Silence platform.",
+			"Provided comprehensive support to queer folk navigating the process of updating legal documents to reflect their correct name and gender identity. Developed and distributed accessible, step-by-step instructional guides to streamline these complex bureaucratic procedures for the community. Additionally, conducted independent research and authored multiple papers on queer rights and advocacy for After The Silence.",
 		skills: ["Legal research", "Legal drafting", "Policy analysis"],
 	},
 	{
