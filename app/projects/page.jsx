@@ -1,11 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import Image from "next/image";
 
-// images
+// images (Replace these files in your public folder with your own photos!)
 import Intervyou1 from "@/public/image/projects/web/intervyou/intervyou-1.png";
 import Intervyou2 from "@/public/image/projects/web/intervyou/intervyou-2.jpeg";
 import Intervyou3 from "@/public/image/projects/web/intervyou/intervyou-3.webp";
@@ -18,19 +18,14 @@ import FixedButon from "@/components/FixedButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-const category = {
-	1: "Web Development",
-	2: "AI & Machine Learning",
-	9: "Other",
-};
-
 export default function Page() {
-	const [activeCategory, setActiveCategory] = useState(1);
+	// Filters only the items marked as show: true, keeping all boxes visible together
 	const projects = Projects.Projects.filter((item) => item.show === true);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
 	return (
 		<>
 			<main className="overflow-hidden">
@@ -46,7 +41,7 @@ export default function Page() {
 							className="relative bg-slate-300 rounded-sm h-[400px] md:h-[600px] w-[80vw] md:w-[30vw] grayscale hover:grayscale-0 ">
 							<Image
 								src={ProjectAll}
-								alt="Alvalens"
+								alt="Vismaya Nimbalkar"
 								fill
 								placeholder="blur"
 								className="object-cover"
@@ -54,16 +49,18 @@ export default function Page() {
 							/>
 						</motion.div>
 					</div>
-					<div className="z-10 w-full absolute md:w-auto md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
-						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-8xl font-bold">
-							My Projects
+					
+					{/* FIXED UI SECTION: Constrained width, adjusted font sizes, and line breaks added */}
+					<div className="z-10 w-full absolute md:w-[50vw] md:left-[10%] top-[60%] md:top-1/3 col-span-2 flex flex-col justify-center items-start md:items-start text-start px-10 pt-4 backdrop-filter backdrop-blur-sm md:backdrop-blur-none md:backdrop-filter-none bg-gray-100 bg-opacity-50 md:bg-transparent md:pt-0">
+						<h1 className="md:bg-white bg-transparent lg:bg-transparent bg-opacity-50 md-px-0 text-black text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+							Experience <br className="hidden md:block" />& Advocacy
 						</h1>
 						<Hr />
-						<p className="title  text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5">
-							List of my projects that I have done and{" "}
+						<p className="title text-xl mt-4 tracking-wider text-gray-900 leading-[1.7rem] mb-5 md:max-w-lg">
+							A detailed record of experience and{" "}
 							<span className="bg-transparent md:bg-gray-100 bg-opacity-50 xl:bg-transparent">
 								{" "}
-								currently working on.
+								advocacy initiatives.
 							</span>
 						</p>
 						<motion.div
@@ -84,7 +81,7 @@ export default function Page() {
 				<div className="mt-10 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
 					<div className="flex justify-center items-center flex-col my-5 self-start ">
 						<Hr variant="long"></Hr>
-						<h1 className="text-3xl font-bold mt-3">Hightlight</h1>
+						<h1 className="text-3xl font-bold mt-3">Highlight</h1>
 					</div>
 				</div>
 				<div className="relative w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10">
@@ -101,7 +98,7 @@ export default function Page() {
 									className="relative w-full h-full shadow-lg">
 									<Image
 										src={Intervyou1}
-										alt="Alvalens"
+										alt="After The Silence"
 										fill
 										placeholder="blur"
 										className="rat object-cover"
@@ -125,7 +122,7 @@ export default function Page() {
 									className="relative w-full h-full shadow-lg ">
 									<Image
 										src={Intervyou3}
-										alt="Alvalens"
+										alt="After The Silence"
 										fill
 										placeholder="blur"
 										className="object-cover"
@@ -152,7 +149,7 @@ export default function Page() {
 									className="relative w-full h-full shadow-lg">
 									<Image
 										src={Intervyou2}
-										alt="Alvalens"
+										alt="After The Silence"
 										fill
 										placeholder="blur"
 										className="object-cover"
@@ -177,29 +174,15 @@ export default function Page() {
 							type: "spring",
 						}}>
 						<h2 className="text-2xl font-bold tracking-wider mb-3">
-							Intervyou AI
+							After The Silence
 						</h2>
 						<p className="text-gray-600 text-justify title text-lg">
-							AI Based interview Preparation Website created to help fresh
-							graduates and job seekers prepare for interviews and optimize
-							their CV through AI-powered features. The website is built using
-							Next.js, TypeScript, Tailwind CSS, Shadcn UI, Prisma, and MySQL
-							(TiDB). This website can comprehensively analyze the user&apos;s
-							interview performance by providing a analysis of the user&apos;s
-							answer, gesture, and material recommendation to improve the user&apos;s
-							interview skills.
+							A social advocacy platform dedicated to LGBTQ+ rights and support. I provided comprehensive assistance to transgender individuals navigating the complex bureaucratic process of updating legal documents to reflect their correct name and gender identity. In addition to developing accessible, step-by-step instructional guides for the community, I conducted independent research and authored multiple published papers on LGBTQ+ advocacy.
 						</p>{" "}
 						<div className="mt-3">
 							<Button variation="primary">
-								<Link href="projects/intervyou">More</Link>
-							</Button>
-							<Button variation="secondary">
-								<a
-									href="https://www.intervyou.me"
-									target="_blank"
-									rel="noopener noreferrer">
-									Preview
-								</a>
+								{/* You can replace this # with a link to your paper if you have one */}
+								<a href="#">Read Publications</a>
 							</Button>
 						</div>
 					</motion.div>
@@ -221,46 +204,17 @@ export default function Page() {
 								delay: 0.7,
 								type: "spring",
 							}}>
-							Other Note Worthy Projects
+							Other Notable Experience
 						</motion.h1>
 					</div>
 				</div>
 
-				{/* choose category */}
-				<motion.div
-					initial={{
-						opacity: 0,
-						x: 200,
-					}}
-					whileInView={{
-						opacity: 1,
-						x: 0,
-					}}
-					transition={{
-						type: "spring",
-					}}
-					className="flex flex-row justify-center items-start flex-wrap gap-3 md:gap-5 my-5 ">
-					{Object.keys(category).map((key, index) => (
-						<button
-							key={index}
-							className={`px-2 md:px-4 py-2 rounded-lg cursor-pointer transition-all ease duration-300 focus:bg-gray-300 focus:text-black focus:ring focus:ring-slate-500 ${
-								activeCategory === key
-									? "bg-gray-300 text-black hover:bg-gray-700 hover:text-white"
-									: "bg-gray-700 text-white hover:bg-gray-300 hover:text-black"
-							}`}
-							onClick={() => setActiveCategory(key)}>
-							{category[key]}
-						</button>
-					))}
-				</motion.div>
-
-				{/* projects */}
-				<div className="w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 cursor-pointer">
+				{/* Project boxes grid (Categories completely removed) */}
+				<div className="w-screen mx-auto container gap-4 px-10 grid grid-cols-1 md:grid-cols-2 mb-10 cursor-pointer mt-10">
 					{projects.map((project, index) => (
 						<ProjectCard
 							project={project}
 							key={index}
-							activeCategory={activeCategory}
 						/>
 					))}
 				</div>
@@ -275,7 +229,8 @@ export default function Page() {
 					}}
 					className="flex justify-center items-center flex-col my-5 self-start ">
 					<Button variation="primary">
-						<Link href="projects/archive">View In Archive</Link>
+						{/* You can remove this button entirely if you don't have an archive page */}
+						<Link href="/">Back to Home</Link>
 					</Button>
 				</motion.div>
 			</main>

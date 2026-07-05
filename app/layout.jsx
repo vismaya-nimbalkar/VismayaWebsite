@@ -5,8 +5,10 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import { Analytics } from "@vercel/analytics/react";
-import Chat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
+
+// I have commented out the Chat widget to keep the portfolio formal and professional.
+// import Chat from "@/components/Chat"; 
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -24,38 +26,37 @@ const jost = Jost({
 });
 
 export const metadata = {
-	metadataBase: new URL("https://www.alvalens.my.id"),
-	title: "Alvalens | Portofolio",
+	metadataBase: new URL("https://www.nimbalkar.in"), 
+	title: "Vismaya Nimbalkar | Legal Portfolio",
 
 	description:
-		"Alvalen, Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou.",
+		"Vismaya Nimbalkar, Detail-oriented Law & Company Secretary Student specializing in legal research, compliance drafting, and policy advocacy.",
 
-	author: "Alvalen Shafelbilyunazra",
-	siteUrl: "https://www.alvalens.my.id",
-	applicationName: "Alvalens",
+	author: "Vismaya Nimbalkar",
+	siteUrl: "https://www.vismaya-nimbalkar.in",
+	applicationName: "Vismaya Portfolio",
 
 	keywords: [
-		"alvalens",
-		"alvalen",
-		"alvalen shafel",
-		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
+		"vismaya nimbalkar",
+		"vismaya",
+		"law student pune",
+		"symbiosis law school",
+		"company secretary student",
+		"legal research",
+		"policy advocacy",
+		"after the silence",
 	],
 
 	openGraph: {
 		type: "website",
-		url: "https://www.alvalens.my.id",
-		title: "Alvalens | Portofolio",
-		siteName: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
+		url: "https://www.nimbalkar.in",
+		title: "Vismaya Nimbalkar | Legal Portfolio",
+		siteName: "Vismaya Nimbalkar | Legal Portfolio",
+		description: "Detail-oriented Law Professional specializing in legal research and compliance.",
 		images: [
 			{
-				url: "/og-image-rev.png",
-				alt: "Alvalens Portofolio",
+				url: "/og-image-rev.png", // You can replace this image in the public folder later
+				alt: "Vismaya Nimbalkar Portfolio",
 				width: 1200,
 				height: 630,
 			},
@@ -66,21 +67,20 @@ export const metadata = {
 const jsonLd = {
 	"@context": "https://schema.org",
 	"@type": "Person",
-	name: "Alvalen Shafelbilyunazra",
-	url: "https://www.alvalens.my.id",
-	jobTitle: "Full Stack Software Engineer",
+	name: "Vismaya Nimbalkar",
+	url: "https://www.nimbalkar.in",
+	jobTitle: "Law Student & Legal Professional",
 	worksFor: [
-		{ "@type": "Organization", name: "MGG Software" },
-		{ "@type": "Organization", name: "Intervyou" },
+		{ "@type": "Organization", name: "After The Silence" },
+		{ "@type": "Organization", name: "Law Chambers of Lakshmi Menon" },
 	],
 	alumniOf: {
 		"@type": "CollegeOrUniversity",
-		name: "Universitas Negeri Malang",
+		name: "Symbiosis Law School, Pune",
 	},
 	sameAs: [
-		"https://github.com/Alvalens",
-		"https://www.linkedin.com/in/alvalen-shafel-8a081a254/",
-		"https://www.instagram.com/alvalens_/",
+		"https://www.linkedin.com/in/vismaya-nimbalkar/",
+		"mailto:vismaya@nimbalkar.in",
 	],
 };
 
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
 				<ClientTopProgressBar />
 				<Navbar />
 				{children}
-				<Chat />
+				{/* <Chat /> */} 
 				<Analytics />
 			</body>
 		</html>

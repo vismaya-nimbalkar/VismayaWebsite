@@ -1,9 +1,9 @@
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "About | Alvalens",
+  title: "About | Vismaya",
   description:
-    "Product-Minded Software Engineer specializing in Next.js, Spring Boot, and AI Solutions. Founder & CTO of Intervyou. Computer Science graduate from Universitas Negeri Malang.",
+    "Detail-oriented Law & Company Secretary Student specializing in legal research, compliance drafting, and policy advocacy. Social advocate and published researcher at After The Silence. BBA.LLB (Hons.) candidate at Symbiosis Law School, Pune.",
 };
 export default function Layout({ children }) {
   return (

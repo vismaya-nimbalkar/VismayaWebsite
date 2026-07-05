@@ -1,116 +1,98 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { CodepenIcon, WebhookIcon, ActivityIcon, MobileIcon } from "./icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+	faBalanceScale, 
+	faFileContract, 
+	faUsers, 
+	faBullhorn 
+} from "@fortawesome/free-solid-svg-icons";
 
 const skillCategories = {
-	web: {
-		title: "Web Development",
-		icon: CodepenIcon,
-		description: "Building modern, responsive web applications",
+	research: {
+		title: "Legal Research & Drafting",
+		icon: faBalanceScale,
+		description: "Comprehensive legal research and preparation of legal documents.",
 		languages: [
-			{ name: "NextJS", highlight: true },
-			{ name: "React", highlight: true },
-			{ name: "TypeScript", highlight: true },
-			{ name: "JavaScript", highlight: false },
-			{ name: "Laravel", highlight: true },
-			{ name: "HTML", highlight: false },
-			{ name: "CSS", highlight: false },
-			{ name: "TailwindCSS", highlight: true },
-			{ name: "Bootstrap", highlight: false },
-			{ name: "Flask", highlight: false },
-			{ name: "Django", highlight: false },
-			{ name: "Firebase", highlight: false },
+			{ name: "Legal Research", highlight: true },
+			{ name: "Writ Petitions", highlight: true },
+			{ name: "General Power of Attorney", highlight: true },
+			{ name: "Memos of Compliance", highlight: true },
+			{ name: "Case Briefing", highlight: false },
+			{ name: "Issue Identification", highlight: false },
+			{ name: "Legal Writing", highlight: false },
+			{ name: "Policy Analysis", highlight: false },
 		],
 		tools: [
-			"Vercel",
-			"Vite",
-			"Figma",
-			"Docker",
-			"Kubernetes",
-			"Git",
-			"Github",
-			"GitLab",
-			"Bitbucket",
-			"Google Cloud",
-			"Postman",
+			"Intellectual Property Laws",
+			"Criminal Procedure Code (CrPC)",
+			"Government Contract Law",
+			"Arbitration",
+			"Statutes & Case Law",
 		],
 	},
-	api: {
-		title: "Backend & API",
-		icon: WebhookIcon,
-		description: "Creating robust and scalable backend services",
+	compliance: {
+		title: "Corporate & Compliance",
+		icon: faFileContract,
+		description: "Ensuring regulatory adherence and administrative operations.",
 		languages: [
-			{ name: "Java Spring Boot", highlight: true },
-			{ name: "NodeJS", highlight: false },
-			{ name: "ExpressJS", highlight: true },
-			{ name: "PHP", highlight: false },
-			{ name: "Laravel", highlight: true },
-			{ name: "FastAPI", highlight: true },
-			{ name: "Python", highlight: false },
-			{ name: "Flask", highlight: false },
-			{ name: "Django", highlight: false },
-			{ name: "PostgreSQL", highlight: true },
-			{ name: "MySQL", highlight: true },
-			{ name: "MongoDB", highlight: false },
-			{ name: "Firebase", highlight: false },
+			{ name: "Compliance Documentation", highlight: true },
+			{ name: "GST Regulations", highlight: true },
+			{ name: "Corporate Governance", highlight: true },
+			{ name: "Data Analysis", highlight: false },
+			{ name: "Actionable Reporting", highlight: false },
+			{ name: "Project Coordination", highlight: false },
 		],
 		tools: [
-			"Docker",
-			"Kubernetes",
-			"Postman",
-			"Swagger",
-			"Git",
-			"Github",
-			"GitLab",
-			"Bitbucket",
-			"Google Cloud",
-			"IBM Cloud",
+			"Company Secretary Training",
+			"Spreadsheet Management",
+			"Administrative Support",
+			"Operational Problem Solving",
 		],
 	},
-	ai: {
-		title: "AI & Machine Learning",
-		icon: ActivityIcon,
-		description: "Developing intelligent solutions with ML/AI",
+	advocacy: {
+		title: "Advocacy & Social Work",
+		icon: faUsers,
+		description: "Championing LGBTQ+ rights, climate justice, and legal accessibility.",
 		languages: [
-			{ name: "RAG Pipelines", highlight: true },
-			{ name: "Gemini API", highlight: true },
-			{ name: "OpenAI API", highlight: true },
-			{ name: "LangChain", highlight: true },
-			{ name: "Python", highlight: true },
-			{ name: "TensorFlow", highlight: true },
-			{ name: "PyTorch", highlight: false },
-			{ name: "Scikit-learn", highlight: false },
-			{ name: "Pandas", highlight: false },
-			{ name: "NumPy", highlight: false },
-			{ name: "Jupyter", highlight: false },
+			{ name: "LGBTQ+ Advocacy", highlight: true },
+			{ name: "Legal Identity Updates", highlight: true },
+			{ name: "Academic Research", highlight: true },
+			{ name: "Human Rights Law", highlight: true },
+			{ name: "Environmental Law", highlight: false },
+			{ name: "Doctrinal Analysis", highlight: false },
 		],
 		tools: [
-			"Jupyter Notebook",
-			"Google Colab",
-			"Google Cloud AI",
-			"AWS SageMaker",
-			"IBM Watson",
+			"After The Silence Platform",
+			"Accessible Instructional Guides",
+			"Gender Champions Cell",
+			"Community Outreach",
 		],
 	},
-	mobile: {
-		title: "Mobile Development",
-		icon: MobileIcon,
-		description: "Cross-platform mobile app development",
+	communication: {
+		title: "Communication & Leadership",
+		icon: faBullhorn,
+		description: "Delivering effective presentations and leading initiatives.",
 		languages: [
-			{ name: "React Native", highlight: true },
-			{ name: "Flutter", highlight: true },
-			{ name: "JavaScript", highlight: false },
-			{ name: "TypeScript", highlight: false },
-			{ name: "Dart", highlight: false },
+			{ name: "Public Speaking", highlight: true },
+			{ name: "Oral Advocacy", highlight: true },
+			{ name: "Academic Presentations", highlight: true },
+			{ name: "Toastmasters", highlight: true },
+			{ name: "Team Leadership", highlight: false },
+			{ name: "Event Hosting", highlight: false },
+			{ name: "Model UN (MUN)", highlight: false },
 		],
-		tools: ["Android Studio", "React Native CLI"],
+		tools: [
+			"Academic & Research Cell",
+			"Project Presentations",
+			"Cross-functional Collaboration",
+			"Fast-paced Environments",
+		],
 	},
 };
 
 function SkillCard({ skill, isSelected, onClick }) {
-	const Icon = skill.icon;
-
 	return (
 		<motion.div
 			onClick={onClick}
@@ -124,17 +106,17 @@ function SkillCard({ skill, isSelected, onClick }) {
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.3 }}>
-			{/* Glow effect - removed for selected state */}
+			{/* Glow effect */}
 			{!isSelected && (
 				<div className="absolute inset-0 rounded-2xl transition-opacity duration-300 opacity-0 group-hover:opacity-50 bg-gradient-to-r from-gray-400/20 to-gray-600/20 blur-xl" />
 			)}
 
 			<div className="relative z-10 flex flex-col items-center text-center space-y-4">
 				<div
-					className={`p-4 rounded-xl transition-all duration-300 ${
+					className={`p-4 rounded-xl transition-all duration-300 flex justify-center items-center ${
 						isSelected ? "bg-white/30" : "bg-white/10 group-hover:bg-white/20"
 					}`}>
-					<Icon className="w-8 h-8 text-black" />
+					<FontAwesomeIcon icon={skill.icon} className="w-8 h-8 text-black" />
 				</div>
 				<div>
 					<h3 className="font-semibold text-black text-lg mb-2">
@@ -148,6 +130,7 @@ function SkillCard({ skill, isSelected, onClick }) {
 		</motion.div>
 	);
 }
+
 const tagVariants = {
   hidden: { opacity: 0, scale: 0.8 },
   show: { opacity: 1, scale: 1 },
@@ -164,7 +147,7 @@ function SkillDetails({ selectedSkill }) {
       transition={{ duration: 0.5 }}
       className="mt-12 space-y-8"
     >
-      {/* Languages & Frameworks Section */}
+      {/* Competencies Section */}
       <motion.div
         className="bg-white/40 border border-gray-300/30 rounded-2xl p-8 shadow-sm"
         initial={{ opacity: 0, x: -50 }}
@@ -172,7 +155,7 @@ function SkillDetails({ selectedSkill }) {
         transition={{ delay: 0.2 }}
       >
         <h3 className="text-2xl font-semibold text-black mb-6 text-center">
-          Technology Stack
+          Core Competencies
         </h3>
         <motion.div
           key={selectedSkill.title}
@@ -209,7 +192,7 @@ function SkillDetails({ selectedSkill }) {
         transition={{ delay: 0.4 }}
       >
         <h3 className="text-xl font-medium text-gray-500 mb-6 text-center uppercase tracking-wider">
-          Infrastructure & Tools
+          Focus Areas & Platforms
         </h3>
         <motion.div
           key={selectedSkill.title + "-tools"}
@@ -234,7 +217,7 @@ function SkillDetails({ selectedSkill }) {
 }
 
 export default function Skills() {
-	const [selectedCategory, setSelectedCategory] = useState("web");
+	const [selectedCategory, setSelectedCategory] = useState("research");
 	return (
 		<div className="relative">
 			<div className="mx-auto container px-6 py-20">
@@ -247,8 +230,8 @@ export default function Skills() {
 						Skills & Expertise
 					</h2>
 					<p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-						Explore my technical skills across different domains. Click on any
-						category to see the specific technologies and tools I work with.
+						Explore my competencies across different legal and advocacy domains. Click on any
+						category to see specific skills and focus areas.
 					</p>
 				</motion.div>
 

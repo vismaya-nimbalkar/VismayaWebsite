@@ -100,7 +100,7 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
 									variants={itemVariants}
 									animate={isNavOpen ? "open" : "closed"}
 									custom={0.3}>
-									Projects
+									Experience
 								</motion.h2>
 							</div>
 						</Link>
@@ -146,7 +146,7 @@ const Navbar = () => {
 						className={`text-2xl ml-2 md:ml-0 transition-colors ease duration-500 ${
 							isNavOpen ? "text-white" : ""
 						}`}>
-						Alvalens
+						Vismaya
 					</h1>
 				</div>
 				<div className="flex flex-row items-center">

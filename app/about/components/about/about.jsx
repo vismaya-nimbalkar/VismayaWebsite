@@ -1,5 +1,5 @@
+"use client";
 import Image from "next/image";
-import Card from "./spotify/card";
 import { motion } from "framer-motion";
 import Me1 from "@/public/image/me1.jpg";
 import Me2 from "@/public/image/me2.jpg";
@@ -35,7 +35,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me1}
-									alt="Alvalens"
+									alt="Vismaya Nimbalkar"
 									fill
 									sizes="(max-width: 768px) 80vw, 40vw"
 									className="object-cover"
@@ -59,7 +59,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me2}
-									alt="Alvalens"
+									alt="Vismaya Nimbalkar"
 									fill
 									sizes="(max-width: 768px) 60vw, 25vw"
 									className="object-cover"
@@ -85,7 +85,7 @@ export default function About() {
 								className="relative w-full h-full">
 								<Image
 									src={Me3}
-									alt="Alvalens"
+									alt="Vismaya Nimbalkar"
 									fill
 									sizes="(max-width: 768px) 80vw, 35vw"
 									className="object-cover"
@@ -107,55 +107,41 @@ export default function About() {
 					}}
 					transition={{
 						delay: 0.5,
-
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
-						Alvalen Shafelbilyunazra
+						Vismaya Nimbalkar
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg leading-relaxed">
 						I am a{" "}
 						<span className="text-black font-medium">
-							Product-Minded Software Engineer{" "}
+							Detail-Oriented Law Professional{" "}
 						</span>
 						specialized in bridging the gap between{" "}
 						<span className="text-black font-medium">
-							Modern Web Ecosystems and Enterprise Architectures
+							rigorous corporate compliance and impactful social advocacy
 						</span>
-						. A Computer Science graduate from{" "}
+						. Currently pursuing my BBA.LLB (Hons.) at{" "}
 						<span className="text-black font-medium">
-							Universitas Negeri Malang
+							Symbiosis Law School, Pune
 						</span>
-						, my professional journey is defined by high-stakes
-						projects, ranging from robust government-scale
-						microservices to sophisticated{" "}
-						<span className="text-black font-medium">
-							RAG-powered SaaS products{" "}
+						{" "}and a Professional Certification from the{" "}
+                        <span className="text-black font-medium">
+							Indian Institute of Company Secretaries
 						</span>
-						designed to bring the power of Generative AI to
-						end-users.
+						, my journey is defined by a commitment to comprehensive legal research, effective administrative support, and clear communication.
 						<br />
 						<br />
-						Currently, I engineer large-scale enterprise systems at{" "}
+						Currently, I apply my research expertise as a Social Worker at{" "}
 						<span className="text-black font-medium">
-							MGG Software
+							After The Silence
 						</span>
-						, ensuring strict data compliance and high availability
-						for international clients. Simultaneously, I lead the
-						technical vision as the{" "}
+						, advocating for LGBTQ+ rights and authoring accessible guides for legal identity updates. My practical experience includes drafting critical legal instruments—from Writ Petitions to Memos of Compliance—at the{" "}
 						<span className="text-black font-medium">
-							CTO of Intervyou
+							Law Chambers of Lakshmi Menon
 						</span>
-						, an AI-driven platform supported by the{" "}
-						<span className="text-black font-medium">
-							Google for Startups Cloud Program and NVIDIA
-							Inception
-						</span>
-						. I remain dedicated to delivering measurable business
-						value at the intersection of web technologies and
-						artificial intelligence.
+						. I remain dedicated to delivering actionable solutions and leveraging my oral advocacy skills in fast-paced professional environments.
 					</p>
-					<Card />
 				</motion.div>
 			</div>
 		</>

@@ -1,65 +1,66 @@
-import Link from "next/link";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import PropTypes from "prop-types";
-import BlurImage from "@/public/image/placeholder/blur.jpg";
+"use client";
 
-export default function ProjectCard({ project, index, activeCategory }) {
+import { motion } from "framer-motion";
+import Button from "@/components/Button";
+
+export default function ProjectCard({ project }) {
 	return (
-		<>
-			{project.category.includes(parseInt(activeCategory)) && (
-				<Link href={"projects/" + project.slug} key={index}>
-					<motion.div
-						className="z-10 relative flex justify-center items-start flex-col mb-5 md:px-10 w-full h-auto bg-gray-400 group/tes py-20 px-5 md:py-2 aspect-video "
-						initial={{
-							opacity: 0,
-							x: -200,
-						}}
-						whileInView={{
-							opacity: 1,
-							x: 0,
-						}}
-						transition={{
-							type: "spring",
-						}}>
-						<Image
-							src={project.thumbnail}
-							alt="Alvalens"
-							fill
-							placeholder="blur"
-							className="bg-slate-950 opacity-10  group-hover/tes:opacity-100 transition-all ease duration-500 object-cover"
-							blurDataURL={BlurImage.src}
-						/>
-						<div className="absolute top-0 left-0 bg-gray-600 px-4 py-2">
-							<h4 className="text-white">{project.year}</h4>
-						</div>
-						<div className="transition-all ease duration-500 opacity-100 content text-center group-hover/tes:opacity-0 z-10">
-							<h1 className="text-3xl font-bold mb-3">{project.title}</h1>
-							<p>
-								{project.desc[0].length > 125
-									? `${project.desc[0].slice(0, 125)}...`
-									: project.desc[0]}
-							</p>
-							<div className="flex justify-center items-center flex-row mt-5 flex-wrap">
-								{project.tech.map((t, index) => (
-									<span
-										key={index}
-										className="m-1 px-4 py-2 bg-gray-600 text-white ">
-										{t}
-									</span>
-								))}
-							</div>
-						</div>
-					</motion.div>
-				</Link>
+		<motion.div
+			layout
+			initial={{ opacity: 0, y: 30 }}
+			animate={{ opacity: 1, y: 0 }}
+			exit={{ opacity: 0, y: 30 }}
+			transition={{ duration: 0.3 }}
+			className="p-8 m-2 border-2 border-gray-200 bg-white/70 backdrop-blur-sm rounded-2xl hover:shadow-lg transition-all duration-300 flex flex-col h-full"
+		>
+			<div className="flex-grow">
+				<div className="flex justify-between items-start mb-4">
+					<h3 className="text-2xl font-bold text-black leading-tight">
+						{project.title}
+					</h3>
+
+					<span className="text-xs font-semibold text-gray-500 bg-gray-200 px-3 py-1 rounded-full whitespace-nowrap ml-4">
+						{project.year}
+					</span>
+				</div>
+
+				<div className="flex flex-wrap gap-2 mb-6">
+					{project.tech?.map((skill) => (
+						<span
+							key={skill}
+							className="text-xs font-medium text-gray-700 bg-gray-100 border border-gray-300 px-2 py-1 rounded-md"
+						>
+							{skill}
+						</span>
+					))}
+				</div>
+
+				<ul className="space-y-3 mb-6">
+					{project.desc?.map((paragraph, idx) => (
+						<li
+							key={idx}
+							className="text-gray-600 text-sm text-justify leading-relaxed flex items-start"
+						>
+							<span className="text-gray-400 mr-2 mt-1">•</span>
+							<span>{paragraph}</span>
+						</li>
+					))}
+				</ul>
+			</div>
+
+			{project.preview && (
+				<div className="mt-auto pt-4 border-t border-gray-200">
+					<Button variation="primary">
+						<a
+							href={project.preview}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							View Document
+						</a>
+					</Button>
+				</div>
 			)}
-		</>
+		</motion.div>
 	);
 }
-
-ProjectCard.propTypes = {
-	project: PropTypes.object.isRequired,
-	index: PropTypes.number.isRequired,
-	activeCategory: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-		.isRequired,
-};

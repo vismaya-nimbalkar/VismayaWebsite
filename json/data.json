@@ -2,524 +2,294 @@
   "Projects": [
     {
       "show": true,
-      "title": "iv-kogen",
+      "title": "Social Advocacy & Research",
       "desc": [
-        "iv-kogen is a brand-aware AI content studio that turns institution brand guidelines into on-brand Instagram carousels, video scripts, captions, and trend-driven content ideas. Built as an internal tool for the Intervyou marketing operations, it replaces the slow back-and-forth of brief → copy → revise with a single prompt that already understands the brand voice.",
-        "The architecture leans heavily on retrieval-augmented generation: brand documents (executive summaries, product PDFs, style guides) are ingested into a Knowledge Base with sentence-aware chunking and batch Gemini embeddings, then surfaced to the model at generation time alongside an explicit Brand Assets layer (color palette, style references, prior on-brand posts). Every output is grounded in real institution documents rather than improvised by the model.",
-        "Generation modules cover the full social pipeline — Content Ideas (Google Search-augmented trend research), Carousel (multi-turn image editing with version branching), Video Script, and Caption — gated behind invite-code and session-token authentication. Built on Next.js + React with PostgreSQL/Prisma for state and Vercel Blob for asset storage."
+        "Provided comprehensive support to transgender individuals navigating the process of updating legal documents to reflect their correct name and gender identity.",
+        "Developed and distributed accessible, step-by-step instructional guides to streamline these complex bureaucratic procedures for the community.",
+        "Conducted independent research and authored multiple published papers on LGBTQ+ rights and advocacy for the After The Silence platform."
       ],
-      "year": "2026",
+      "year": "2025 - Present",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/ai/iv-kogen/iv-kogen-thumbnail.png",
-      "images": [
-        "/image/projects/ai/iv-kogen/iv-kogen1.png",
-        "/image/projects/ai/iv-kogen/iv-kogen2.png",
-        "/image/projects/ai/iv-kogen/iv-kogen3.png"
-      ],
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "NextJS",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Gemini API",
-        "RAG",
-        "PostgreSQL",
-        "Prisma",
-        "Vercel Blob"
+        "Legal Research",
+        "Document Drafting",
+        "LGBTQ+ Advocacy",
+        "Policy Analysis",
+        "Human Rights Law"
       ],
-      "slug": "iv-kogen",
+      "slug": "social-advocacy",
       "category": [2]
     },
     {
       "show": true,
-      "title": "Quanta",
+      "title": "Legal Internship",
       "desc": [
-        "Quanta is a self-hosted AI agent for the Indonesian Stock Exchange (IDX) that monitors a personal portfolio, scans macro and Indonesian news five times a day, discovers undervalued stocks, and pushes color-coded alerts to Discord — all running on a private VPS with no auto-trading.",
-        "Under the hood, the agent runs a four-phase pipeline: Phase 0 gathers portfolio, budget, 13 RSS feeds, foreign flow, and macro indicators; Phase 1 uses Gemini 3 Flash to scout 10–15 candidates; Phase 2 fetches PBV, PER, RSI, SMA-200, and OBV; Phase 3 hands off to Gemini 3.1 Pro for deep analysis and DCA-first reasoning across three time horizons.",
-        "The dashboard surfaces a Strategic Intelligence feed with confidence-scored recommendations and full undervalued-stock breakdowns. A built-in chat panel lets the user ask questions like 'Should I DCA BBRI?' with live data fetched via AI tool calling — six tools spanning quotes, technicals, macro, portfolio, and recommendation history. Each recommendation is auto-scored at 7, 14, and 30 days for closed-loop performance feedback."
+        "Drafted critical legal documents at the Law Chambers of Lakshmi Menon, including General Power of Attorney (GPA), Writ Petitions, and Memos of Compliance.",
+        "Undertook extensive legal research across a wide range of subjects to support ongoing cases and legal strategies.",
+        "Assisted in daily administrative and clerical tasks to ensure smooth operational workflow within the chambers."
       ],
-      "year": "2026",
-      "preview": "https://medium.com/@alvalens/automating-rationality-why-i-built-an-ai-sentinel-for-my-idx-portfolio-5020cc8e4ea4",
+      "year": "2025",
+      "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/quanta/quanta-thumbnail.png",
-      "images": [
-        "/image/projects/web/quanta/quanta1.png",
-        "/image/projects/web/quanta/quanta2.png",
-        "/image/projects/web/quanta/quanta3.png",
-        "/image/projects/web/quanta/quanta4.png"
-      ],
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "React",
-        "TypeScript",
-        "Vite",
-        "Tailwind CSS",
-        "Shadcn UI",
-        "NodeJS",
-        "Express",
-        "Prisma",
-        "SQLite",
-        "Gemini API",
-        "AI Tool Calling"
+        "Writ Petitions",
+        "General Power of Attorney",
+        "Intellectual Property Laws",
+        "CrPC",
+        "GST Regulations",
+        "Arbitration"
       ],
-      "slug": "quanta",
+      "slug": "legal-internship",
       "category": [1, 2]
     },
     {
       "show": true,
-      "title": "ModeSakti",
+      "title": "Administrative Internship",
       "desc": [
-        "ModeSakti is an educational innovation sharing platform built for Indonesian teachers — a national repository where guru can submit, validate, and discover classroom innovations spanning inclusive education, assistive technology, and adaptive learning materials.",
-        "The platform runs a curated multi-role workflow with RBAC: teachers draft and submit works, validators review and approve, and admins moderate the catalog. A public explorer surfaces published innovations with search, filtering, downloads, ratings, and reviews. Each contributor gets auto-generated certificates and portfolio badges to build a verifiable record of their work.",
-        "Engineered with Laravel 12 and Inertia.js + React 18 (no separate API), the system uses Spatie Permission for role gating, server-side TanStack tables with a reusable HasDataTable trait, and ShadCN/UI in New York style on top of Tailwind CSS. State transitions move works through Draft → Pending → Published (or Rejected/Banned) with audit trails."
+        "Worked extensively with spreadsheets and generated reports for the Association of Indian Principals to analyze administrative problems and develop effective solutions.",
+        "Prepared comprehensive project presentations and reports to assist senior staff in strategic planning and execution.",
+        "Actively participated in workshops and presentations related to organizational projects to gain industry knowledge and improve operational efficiency."
       ],
-      "year": "2026",
-      "preview": "http://modesakti.com",
+      "year": "2024",
+      "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/modesakti/modesakti-thumbnail.png",
-      "images": [
-        "/image/projects/web/modesakti/modesakti1.png",
-        "/image/projects/web/modesakti/modesakti2.png",
-        "/image/projects/web/modesakti/modesakti3.png",
-        "/image/projects/web/modesakti/modesakti4.png"
-      ],
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "PHP",
-        "Laravel",
-        "Inertia.js",
-        "React",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "MySQL",
-        "Vite"
+        "Data Analysis",
+        "Spreadsheet Management",
+        "Project Coordination",
+        "Actionable Reporting",
+        "Administrative Support"
       ],
-      "slug": "modesakti",
+      "slug": "administrative-internship",
       "category": [1]
     },
     {
       "show": true,
-      "title": "Invervyou AI",
+      "title": "Academic Research: Reproductive Justice",
       "desc": [
-        "Intervyou is an AI-driven SaaS platform designed to bridge the gap between education and employment by providing realistic interview simulations. The platform features a Gen AI engine that analyzes user responses and CVs to provide hyper-personalized feedback and material recommendations.",
-        "Built to scale, the system incorporates a gesture analysis module and a secure token-based payment gateway integrated with Midtrans. It currently serves over 3,000 users and is supported by Google for Startups and NVIDIA Inception."
+        "Authored and presented an academic paper titled 'Circumscribing Reproductive Justice: A Comparative & Doctrinal Analysis Of Forced Pregnancy Under The Rome Statute'.",
+        "Presented research findings at the Gujarat National Law University.",
+        "Utilized doctrinal analysis to explore international human rights frameworks."
       ],
       "year": "2025",
-      "preview": "https://www.intervyou.me",
+      "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/intervyou/intervyou-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/intervyou/intervyou-1.png",
-        "/image/projects/web/intervyou/intervyou-2.jpeg",
-        "/image/projects/web/intervyou/intervyou-3.webp"
-      ],
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "NextJS",
-        "Typescript",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "Prisma",
-        "MySQL",
-        "Midtrans",
-        "Gemini API",
-        "GCP"
-      ], 
-      "slug": "intervyou",
+        "Doctrinal Analysis",
+        "Human Rights Law",
+        "Academic Writing",
+        "Oral Advocacy",
+        "Rome Statute"
+      ],
+      "slug": "reproductive-justice-research",
       "category": [1, 2]
     },
     {
       "show": true,
-      "title": "Exacta Laboratory",
+      "title": "Academic Research: Climate Justice",
       "desc": [
-          "A comprehensive corporate landing page developed for PT Kalibrasi Surabaya (Exacta Laboratory) to establish a high-authority digital presence for their calibration and testing services. The platform serves as the primary communication hub between the laboratory and industrial clients across East Java.",
-          "The project focuses on high-performance web vitals and SEO optimization, ensuring that specialized technical services are easily discoverable and accessible. It features a modern, responsive design with clear service categorization and optimized lead generation funnels to streamline client inquiries.",
-          "Engineered with a focus on brand consistency and professional aesthetics, the platform utilizes advanced frontend techniques to provide a seamless user experience that reflects the laboratory's precision and technical excellence."
-        ],
-      "year": "2025",
-      "preview": "https://www.kalibrasisurabaya.co.id/",
-      "code": "",
-      "thumbnail": "/image/projects/web/exacta/exacta-thumbnail.png",
-      "images": [
-        "/image/projects/web/exacta/exacta1.png",
-        "/image/projects/web/exacta/exacta2.png"
+        "Authored and presented an academic paper titled 'Climate Justice in the Era of Climate Change: A Comparative & Critical Examination of the Netherlands, South Africa, & India'.",
+        "Presented research findings at the West Bengal National University of Juridicial Sciences, Kolkata.",
+        "Conducted a comparative legal analysis of environmental policies across three distinct jurisdictions."
       ],
+      "year": "2025",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
       "tech": [
-        "HTML",
-        "CSS",
-        "JS",
-        "ReactJS",
-        "TailwindCSS",
-        "Typescript"
-      ], 
-      "slug": "exacta-laboratory",
+        "Comparative Analysis",
+        "Environmental Law",
+        "Academic Writing",
+        "Oral Advocacy",
+        "Climate Policy"
+      ],
+      "slug": "climate-justice-research",
       "category": [1]
     },
     {
       "show": false,
       "title": "Client Personal Protfolio Website",
-      "desc": [
-        "A personal portfolio website that I created for a client. The website is built using two main tech, native (HTML, CSSS, JS) and react based (ReactJs, TailwindCSS, Typescript). The website also created based on the client design, and improved and sliced by me. The website has a few features such as a about page, a project page, resume page, and a contact page.",
-        "The website is created using a modern design and a clean interface that appeals to a wide audience. The website also has a responsive design that makes it easy to use on any device. The website also has a few animations that make the website more interactive and engaging."
-      ],
+      "desc": [],
       "year": "2025",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/apii-portfolio/porto-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/apii-portfolio/porto1.png",
-        "/image/projects/web/apii-portfolio/porto2.png",
-        "/image/projects/web/apii-portfolio/porto3.png"
-      ],
-      "tech": [
-        "HTML",
-        "CSS",
-        "JS",
-        "ReactJS",
-        "TailwindCSS",
-        "Typescript"
-      ], 
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "apii-porto",
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Mind Mirror",
-      "desc": [
-        "LMS website that integrated Generative AI feauture to track studnet various keys like mood, behavior, and cognitive ability when learning. The website is built using Laravel as a fullstack framework. In this website teacher can track student mood and other metrics data based on the material students accessed.",
-        "The website also has a few features such as a dashboard for the teacher to see the student's data, a material page, and a quiz page. The website also has a few charts to visualize the student's data. The website provided the student captured data that can be downloaded by the teacher.",
-        "The website also has a features to export the lecture data such as the mood, behaviour, and cognitive score to a xlxs file that can be downloaded by the teacher."
-      ],
+      "desc": [],
       "year": "2024",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/mind-mirror/mind-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/mind-mirror/mind1.png",
-        "/image/projects/web/mind-mirror/mind2.png",
-        "/image/projects/web/mind-mirror/mind3.png",
-        "/image/projects/web/mind-mirror/mind4.png",
-        "/image/projects/web/mind-mirror/mind5.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-      ], 
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "mind-mirror",
       "category": [1, 2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Javanese Translation Website",
-      "desc": [
-        "A Javanese ngoko - krama translation website that I created as a collaborative project with my friends. The website is built using the original Transformer architecture by Vaswani et al. (2017). Built with Python, TensorFlow, Flask, HTML, and CSS, the website allows users to input text in Javanese krama and receive the corresponding ngoko translation.", 
-        "The website is designed to be simple to use, with a clean and modern interface that appeals to a wide audience. Users can input text in Javanese krama and receive the corresponding ngoko translation. The Project also provide ipynb file for the model training and the model itself."
-      ],
+      "desc": [],
       "year": "2024",
       "preview": "",
-      "code": "https://github.com/Alvalens/web-javanese-translation",
-      "thumbnail": "/image/projects/ai/javanese-translation/javanese-translation-thumbnail.jpg",
-      "images": [
-        "/image/projects/ai/javanese-translation/javanese-translation1.png",
-        "/image/projects/ai/javanese-translation/javanese-translation2.png"
-      ],
-      "tech": [
-        "Transformers",
-        "Python",
-        "Tensorflow",
-        "Flask",
-        "HTML",
-        "CSS"
-      ], 
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "javanese-translation",
       "category": [2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "SIPETI: Heart Prediction Website",
-      "desc": [
-        "This is a Machine Learning based website that I created as a collage project. The website is built using Decision Tree algorithm and Flask. The website is a heart attack prediction website that can predict whether a person will get a heart attack or not based on their health condition.",
-        "In this website user can predict, customize dataset, customize model, and see the model performance. The website also has a few features such as a dashboard for the user to see the model performance, and a few charts to visualize the decision tree model."
-      ],
+      "desc": [],
       "year": "2024",
       "preview": "",
-      "code": "https://github.com/Alvalens/heart-attack-prediction",
-      "thumbnail": "/image/projects/ai/heart-attack-prediction/heart-attack-prediction-thumbnail.jpg",
-      "images": [
-        "/image/projects/ai/heart-attack-prediction/heart-attack1.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack2.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack3.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack4.png",
-        "/image/projects/ai/heart-attack-prediction/heart-attack5.png"
-      ],
-      "tech": [
-        "Decision Tree",
-        "Python",
-        "Sklearn",
-        "Flask",
-        "HTML",
-        "CSS"
-      ], 
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "heart-attack",
       "category": [2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Generative Trivia",
-      "desc": [
-        "A generative trivia website built with Next.js, Firebase, NextAuth, Google OAuth, and TypeScript. Users can generate trivia questions for predefined school subjects and answer them with a unique interactive input style. The application supports user authentication with Google and stores data in Firestore.",
-        "The project is a culmination of my passion for web development and my desire to create a fun and interactive learning platform. The website is designed to be user-friendly and engaging, with a clean and modern interface that appeals to a wide audience. The trivia questions are generated using the Gemini API, which provides a diverse range of questions for users to answer."
-      ],
+      "desc": [],
       "year": "2024",
-      "preview": "https://generative-trivia.vercel.app/",
-      "code": "https://github.com/Alvalens/generative-trivia",
-      "thumbnail": "/image/projects/web/trivia/trivia-thumbnail.png",
-      "images": [
-        "/image/projects/web/trivia/trivia1.png",
-        "/image/projects/web/trivia/trivia2.png",
-        "/image/projects/web/trivia/trivia3.png"
-      ],
-      "tech": [
-        "NextJS",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "Firebase",
-        "Gemini API"
-      ], 
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "trivia",
       "category": [1, 2]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Saku Senyum",
-      "desc": [
-        "Saku Senyum is a website that I created as a Fullstack Developer in PT Hafdzahmedia based on client request. The website is a sales management for UMKM or small business. The website is built using Next.js, TypeScript, Tailwind CSS, ShadCN UI, Prisma, and MySQL.",
-        "The website has a few features such as a dashboard for the user to manage their business sales, a statistic page, and a sales report page. User can see their sales performance in a fancy chart to make it easier to understand. The user also can export their sales report to a PDF file which can be printed or saved to their device."
-      ],
+      "desc": [],
       "year": "2024",
-      "thumbnail": "/image/projects/web/saku-senyum/saku-senyum-thumbnail.png",
-      "images": [
-        "/image/projects/web/saku-senyum/saku-senyum1.png",
-        "/image/projects/web/saku-senyum/saku-senyum2.png",
-        "/image/projects/web/saku-senyum/saku-senyum3.png",
-        "/image/projects/web/saku-senyum/saku-senyum4.png"
-      ],
-      "tech": [
-        "NextJS",
-        "Typescript",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "Prisma",
-        "MySQL"
-      ], 
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "saku-senyum",
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Simadun",
-      "desc": [
-        "Simadun is an Exam Management System developed for doctoral students in the Department of Electrical Engineering and Informatics Universitas Negeri Malang. The system facilitates the management of five different types of examinations, allowing students to apply for exams with ease. Professors and program heads can efficiently oversee the exam processes.",
-        
-        "With Simadun, students can submit their exam applications online, track their application status, and receive timely notifications regarding their exam schedules. Program heads and relevant lecturers have access to comprehensive dashboards where they can manage exam requests, allocate resources, and monitor overall exam logistics. "
-      ],
+      "desc": [],
       "year": "2024",
-      "thumbnail": "/image/projects/web/simadun/simadun-thumbnail.png",
-      "images": [
-        "/image/projects/web/simadun/simadun1.png",
-        "/image/projects/web/simadun/simadun2.png",
-        "/image/projects/web/simadun/simadun3.png",
-        "/image/projects/web/simadun/simadun4.png",
-        "/image/projects/web/simadun/simadun5.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-
-      ], 
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "simadun",
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "LUDOang",
-      "desc": [
-        "LUDOang is a game that my team and I created for a final project in my university. The game is built python, pygame, and OpenGL. The game is a 2D game that is inspired by a Ludo game. The game has a few features such randomZone, and a 3D dice.",
-        "RandomZone is a feature that allows the player to get a random number of steps. The 3D dice is a feature that allows the player to roll a 3D dice. The game also has a few other features menuy screen and also loading screen.", "Beside that the game also has a audio theme that will play when the game is started. The game also has a few sound effects such as dice roll sound, and a sound when the player win the game."
-      ],
+      "desc": [],
       "year": "2023",
-      "preview": "https://github.com/Alvalens/ludo-game/releases/tag/pre-release",
-      "code": "https://github.com/Alvalens/ludo-game",
-      "thumbnail": "/image/projects/other/LUDOang/ludo-thumbnail.png",
-      "images": [
-        "/image/projects/other/LUDOang/ludo1.png",
-        "/image/projects/other/LUDOang/ludo2.png",
-        "/image/projects/other/LUDOang/ludo3.png"
-      ],
-      "tech": [
-        "Python",
-        "Pygame",
-        "OpenGL"
-      ], 
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "ludoang",
       "category": [9]
     },
     {
-      "show": true,
+      "show": false,
       "title": "VICC Landing Page",
-      "desc": [
-        "This project is one of my freelance projects. This project is a landing page for Vocational Inter-cultural Camp event held by Vocational Faculty of Universitas Negeri Malang. The website is built using Next.js, Javascript, and Tailwind CSS.", "The website is mainly frontend project, which is already using responsive design. The website has a few features such carousel, and a few animations. The website also has a few pages such as home, topic, and speaker page."
-      ],
+      "desc": [],
       "year": "2023",
-      "preview": "https://inter-cultural-camp.vercel.app",
-      "thumbnail": "/image/projects/web/vicc/vicc-thumbnail.jpg",
-      "images": [
-        "/image/projects/web/vicc/vicc1.png",
-        "/image/projects/web/vicc/vicc2.png",
-        "/image/projects/web/vicc/vicc3.png"
-      ],
-      "tech": [
-        "JavaScript",
-        "NextJS",
-        "Tailwind CSS"
-      ],
+      "preview": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "vicc",
       "category": [1]
     },
     {
       "show": false,
       "title": "React Realtime Chat",
-      "desc": [
-        "My ambitious project that delves into the world of interactive web development using React. This project is a realtime chat application that allows users to create chat rooms and chat with other users in realtime. The application is built using React, Firebase, and Daisy UI.",
-        "This project is my second react project and my first project using Firebase. I learned a lot about how to use Firebase and how to use React to create a realtime application. I also learned how to use Daisy UI, a CSS framework that is built on top of Tailwind CSS. "
-      ],
+      "desc": [],
       "year": "2023",
-      "preview": "https://react-chat-rouge.vercel.app",
-      "code": "https://github.com/Alvalens/react-realtime-chat",
-      "thumbnail": "/image/projects/web/react-chat/chat-thumbnail.png",
-      "images": [
-        "/image/projects/web/react-chat/chat1.png",
-        "/image/projects/web/react-chat/chat2.png",
-        "/image/projects/web/react-chat/chat3.png",
-        "/image/projects/web/react-chat/chat4.png"
-      ],
-      "tech": [
-        "JavaScript",
-        "React",
-        "React Router",
-        "Firebase",
-        "Daisy UI"
-      ],
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "react-chat",
       "category": [1]
     },
     {
       "show": false,
       "title": "React Tools",
-      "desc": [
-        "React Tools is a groundbreaking and user-friendly project that brings together a comprehensive collection of tools and components crafted with cutting-edge technologies, including React, React Router, and TailwindCSS. What sets this project apart is that it's not just a suite of powerful features, but it's also a significant milestone as it marks my very first venture into the world of React development.",
-
-        "Unlike traditional web applications, React Tools cleverly utilizes browser local storage, eliminating the need for external databases. This not only ensures seamless performance but also prioritizes user data privacy. ",
-
-        "The Todo List keeps tasks in check with intuitive task management capabilities, ensuring you never miss a beat. The note-taking feature provides a hassle-free way to jot down ideas and crucial information, accessible whenever inspiration strikes. Additionally, our robust expense tracker simplifies financial management by recording and categorizing expenses, delivering insightful spending analysis."
-      ],
+      "desc": [],
       "year": "2023",
-      "preview": "https://react-tools-flax.vercel.app",
-      "code": "https://github.com/Alvalens/react-tools",
-      "thumbnail": "/image/projects/web/tools/tools-thumbnail.png",
-      "images": [
-        "/image/projects/web/tools/tools.png",
-        "/image/projects/web/tools/tools1.png",
-        "/image/projects/web/tools/tools2.png",
-        "/image/projects/web/tools/tools3.png"
-      ],
-      "tech": [
-        "Javascript",
-        "React",
-        "React Router",
-        "TailwindCSS"
-      ],
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "react-tools",
       "category": [1]
     },
     {
-      "show": true,
+      "show": false,
       "title": "Aleph Discord Bot",
-      "desc": [
-        "Aleph is a Discord bot that I created for my dircord server to use. The bot is built using Python and the discord.py library. The bot has image grabber feauture that takes argument (keywords) and returns an image from the internet.", "Other than that this bot has a few other features such as utility command to delete a messages, and a command to get the server's ping. This bot is still in development and I plan to add more features in the future."],
-      "year": "2023",
-      "preview": "",
-      "code": "https://github.com/Alvalens/aleph-discord-bot",
-      "thumbnail": "/image/projects/other/bot/bot-thumbnail.png",
-      "images": [
-        "/image/projects/other/bot/bot1.png",
-        "/image/projects/other/bot/bot2.png"
-      ],
-      "tech": [
-        "Python",
-        "Discord.py",
-        "Google Serp API"
-      ],
-      "slug": "aleph-discord-bot",
-      "category": [9]
-    }, 
-    {
-      "show": true,
-      "title": "LPTK Cup 2023 Website",
-      "desc": [
-        "LPTK Cup UM is a website that I created for a competition held by  the Universitas Negeri Malang. The website is mainly built using Laravel and Bootstrap. The website has a few features such as a registration form, a login system, article system, file upload,  and a dashboard for the admin to manage the contents.",
-        "This project is my second freelance project, this project is not as big as my first freelance project but I learned a lot from this project. I learn how to manage a project and how to work with a team."
-      ],
+      "desc": [],
       "year": "2023",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/lptk/lptk1.png",
-      "images": [
-        "/image/projects/web/lptk/lptk1.png",
-        "/image/projects/web/lptk/lptk2.png",
-        "/image/projects/web/lptk/lptk3.png",
-        "/image/projects/web/lptk/lptk4.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-      ],
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
+      "slug": "aleph-discord-bot",
+      "category": [9]
+    },
+    {
+      "show": false,
+      "title": "LPTK Cup 2023 Website",
+      "desc": [],
+      "year": "2023",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "lptk-cup-2023",
       "category": [1]
-    }, 
+    },
     {
       "show": false,
       "title": "NU INO Website",
-      "desc": [
-        "My first freelance project. This project is a website for a School based on a JALAKAR curriculum. The website is built mainly using Laravel and Bootstrap.", "This website is LMS like system, have a user management, user auth, quiz and material for student and FAQ",  "In this project I learned how to work with a team and how to manage a project. I also learned new library such as livewire and alpine.js."],
+      "desc": [],
       "year": "2023",
       "preview": "",
       "code": "",
-      "thumbnail": "/image/projects/web/ino/ino1.png",
-      "images": [
-        "/image/projects/web/ino/ino1.png",
-        "/image/projects/web/ino/ino2.png",
-        "/image/projects/web/ino/ino3.png"
-      ],
-      "tech": [
-        "PHP",
-        "Laravel",
-        "Bootstrap",
-        "Livewire",
-        "MySQL",
-        "jQuery",
-        "DataTables"
-      ],
+      "thumbnail": "",
+      "images": [],
+      "tech": [],
       "slug": "nu-ino-website",
       "category": [1]
     }

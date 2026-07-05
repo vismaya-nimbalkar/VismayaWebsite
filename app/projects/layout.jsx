@@ -1,9 +1,9 @@
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Projects | Alvalens",
+  title: "Projects | Vismaya",
   description:
-    "Selected projects spanning web development, AI/ML, and more. Built with Next.js, Spring Boot, Python, and modern frameworks.",
+    "Detail-oriented Law & Company Secretary Student specializing in legal research, compliance drafting, and policy advocacy. Social advocate and published researcher at After The Silence. BBA.LLB (Hons.) candidate at Symbiosis Law School, Pune.",
 };
 export default function Layout({ children }) {
   return (

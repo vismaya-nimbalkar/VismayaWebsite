@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -45,85 +46,71 @@ export default function Education() {
 	const achievementsByYear = {
 		2025: [
 			{
-				icon: faMedal,
-				title: "1st place (Gold Medal)",
-				subtitle: "Fesmaro IT Business Competition",
-				date: "Mar 2025",
+				icon: faAward,
+				title: "Paper Presentation",
+				subtitle: "Circumscribing Reproductive Justice: A Comparative & Doctrinal Analysis Of Forced Pregnancy Under The Rome Statute at Gujarat National Law University",
+				date: "2025",
 				color: "from-yellow-400 to-orange-500",
 			},
 			{
 				icon: faAward,
-				title: "Finalist",
-				subtitle: "Hackfest Build to Billion 2025",
-				date: "Apr 2025",
+				title: "Paper Presentation",
+				subtitle: "Climate Justice in the Era of Climate Change: A Comparative & Critical Examination of the Netherlands, South Africa, & India at the West Bengal National University of Juridicial Sciences, Kolkata",
+				date: "2025",
 				color: "from-blue-500 to-purple-600",
 			},
 			{
 				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Faculty of Engineering Most Outstanding Student",
-				date: "Feb 2025",
+				title: "Competent Communicator (Bronze)",
+				subtitle: "Toastmasters Certification",
+				date: "2025",
 				color: "from-amber-600 to-yellow-600",
 			},
 		],
 		2024: [
 			{
-				icon: faTrophy,
-				title: "Special Award | Gold Medal | Incubation Opportunity",
-				subtitle: "Indonesia Inventor Day 2024 (IID)",
-				date: "Aug 2024",
+				icon: faMedal,
+				title: "Competent Communicator",
+				subtitle: "Toastmasters Certification",
+				date: "2024",
 				color: "from-yellow-400 to-orange-500",
 			},
 			{
-				icon: faMedal,
-				title: "1st place (Gold Medal)",
-				subtitle: "Tech & Trade Expo 2024",
-				date: "Jul 2024",
-				color: "from-yellow-400 to-orange-500",
-			},
-			{
-				icon: faMedal,
-				title: "2nd place (Silver Medal)",
-				subtitle: "IdeaFest 2024",
-				date: "Jul 2024",
-				color: "from-slate-400 to-slate-500",
-			},
-			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "37th National Student Science Week (PIMNAS)",
-				date: "Oct 2024",
+				icon: faGraduationCap,
+				title: "Course Completion",
+				subtitle: "Foundations of Legal Education from the National Law School of India University",
+				date: "2024",
 				color: "from-blue-500 to-purple-600",
 			},
 			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Student Digital Innovation Competition (LIDM)",
-				date: "Jun 2024",
-				color: "from-amber-600 to-yellow-600",
-			},
-			{
-				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "Fesmaro UI/UX Design",
-				date: "Jun 2024",
-				color: "from-amber-600 to-yellow-600",
+				icon: faTrophy,
+				title: "Distinguished Delegate Award",
+				subtitle: "CISMUN X",
+				date: "2024",
+				color: "from-slate-400 to-slate-500",
 			},
 		],
 		2023: [
 			{
-				icon: faAward,
-				title: "Finalist",
-				subtitle: "36th National Student Science Week (PIMNAS)",
-				date: "Nov 2023",
-				color: "from-blue-500 to-purple-600",
+				icon: faTrophy,
+				title: "Various Awards",
+				subtitle: "Speaking, Evaluating, Hosting, & Supporting Awards from Toastmasters",
+				date: "2023",
+				color: "from-amber-600 to-yellow-600",
 			},
 			{
+				icon: faGraduationCap,
+				title: "Course Completion",
+				subtitle: "Entrepreneurship Course from CMR University",
+				date: "2023",
+				color: "from-blue-500 to-purple-600",
+			},
+            {
 				icon: faMedal,
-				title: "3rd place (Bronze Medal)",
-				subtitle: "FORKAFEST 3.0 Web Development competition",
-				date: "Jan 2023",
-				color: "from-amber-600 to-yellow-600",
+				title: "Public Speaking Awards",
+				subtitle: "Recipient of various speaking awards during Secondary School",
+				date: "2023",
+				color: "from-yellow-400 to-orange-500",
 			},
 		],
 	};
@@ -151,10 +138,10 @@ export default function Education() {
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}>
 					<h1 className="text-3xl md:text-4xl font-bold tracking-tighter">
-						Education
+						Education & Advocacy
 					</h1>
 					<p className="text-muted-foreground max-w-[800px] mx-auto">
-						Get to know more about my educational background.
+						Get to know more about my educational background, certifications, and academic research.
 					</p>
 				</motion.div>
 				{/* Main Content */}
@@ -166,14 +153,14 @@ export default function Education() {
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}>
 						<div className="font-medium text-lg mb-4">
-							2022 - 2025
+							2025 - 2030
 						</div>
 						<div>
 							<h2 className="font-semibold text-xl">
-								Universitas Negeri Malang
+								Symbiosis Law School, Pune
 							</h2>
 							<h3 className="text-md font-normal mb-3">
-								S1 Teknik Informatika | Computer Science
+								Semester I-BBA.LLB (Hons.)
 							</h3>
 							<div className="gap-4 mb-4 flex items-stretch md:h-[300px] xl:h-[400px]">
 								<div className="flex-[1] transition-all duration-300 ease-in-out hover:flex-[3] group">
@@ -206,57 +193,53 @@ export default function Education() {
 							</div>
 							<div className="flex items-center gap-2">
 								<p className="text-gray-600 text-justify title text-lg">
-									I graduated as one of the{" "}
+									I am currently pursuing my{" "}
 									<span className="text-black font-medium">
-										Most Outstanding Students
+										BBA.LLB (Hons.)
 									</span>{" "}
-									from{" "}
+									at{" "}
 									<span className="text-black font-medium">
-										Universitas Negeri Malang
+										Symbiosis Law School, Pune
 									</span>
-									, completing my Bachelor in{" "}
-									<span className="text-black font-medium">
-										Computer Science
-									</span>{" "}
-									with a perfect GPA. My academic journey
-									was defined by a balance of rigorous
-									technical research and high-stakes
-									execution.
+									. My academic journey is defined by active engagement in legal research and policy advocacy.
 									<br />
 									<br />
-									As the{" "}
+									At the university level, I serve as a{" "}
 									<span className="text-black font-medium">
-										Co-Lead of Google Developer Group on
-										Campus (GDGoC)
+										Junior Member of the Academic & Research Cell
+									</span>{" "}
+									as well as the{" "}
+									<span className="text-black font-medium">
+										Gender Champions Cell
 									</span>
-									, I spearheaded technical initiatives and
-									mentored a community of developers. Beyond
-									the classroom, I secured multiple national
-									and international honors, including being a{" "}
+									. Additionally, I have developed my oral advocacy skills by participating in the{" "}
 									<span className="text-black font-medium">
-										two-time PIMNAS Finalist and an
-										Indonesia Inventor Day Gold Medalist
+										N.J.Y. International Moot Court Competition
+									</span>{" "}
+									and the{" "}
+									<span className="text-black font-medium">
+										NLIU MUN IV
 									</span>
 									.
 									<br />
 									<br />
-									My education served as the engineering
-									foundation for my current work in{" "}
+									Prior to law school, I completed my HSC at{" "}
 									<span className="text-black font-medium">
-										Enterprise Architecture
+										CMR National Public School
 									</span>{" "}
-									and{" "}
+									with a 93.8% final grade. I am also concurrently completing a Professional Certification with the{" "}
 									<span className="text-black font-medium">
-										AI Implementation
-									</span>
-									. I remain committed to bridging academic
-									innovation with production-ready, scalable
-									software solutions.
+										Indian Institute of Company Secretaries
+									</span>{" "}
+									(2025-2029).
 								</p>
 							</div>
 							<div className="flex flex-wrap gap-2 mt-4 text-sm">
-								<div className="bg-gray-300 text-black px-2 py-1 rounded-2xl">
-									GPA: 4 out of 4
+								<div className="bg-gray-300 text-black px-3 py-1 rounded-2xl">
+									CGPA: 6.9 (Semester I)
+								</div>
+                                <div className="bg-gray-300 text-black px-3 py-1 rounded-2xl">
+									CSEET Score: 70%
 								</div>
 							</div>
 						</div>
@@ -268,10 +251,10 @@ export default function Education() {
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.8, delay: 0.4 }}>
 						<h2 className="font-semibold text-xl mt-7">
-							Achievements
+							Achievements & Publications
 						</h2>
 						<p className="text-md font-normal mb-3 md:mb-6">
-							Some of my achievements during my study.
+							Selected research papers, certifications, and speaking honors.
 						</p>
 
 						{/* Achievements Container with transparent bottom effect */}
@@ -365,7 +348,7 @@ export default function Education() {
 										<span>
 											{isExpanded
 												? `Show Less`
-												: `Show ${allAchievements.length - 4} More`}
+												: `Show ${allAchievements.length - 6} More`}
 										</span>
 										<FontAwesomeIcon
 											icon={

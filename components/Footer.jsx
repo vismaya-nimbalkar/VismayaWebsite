@@ -23,7 +23,7 @@ export default function Footer() {
 						transition={{
 							delay: 0.2,
 						}}>
-						Want something like this?
+						Find my contact details below!
 					</motion.h2>
 					<motion.h1
 						className="text-5xl md:text-7xl font-medium mt-3  hover:underline whitespace-nowrap leading-none"
@@ -49,7 +49,7 @@ export default function Footer() {
 			<footer className="flex justify-center items-center flex-col my-5 self-start]">
 				<p className="text-gray-800 text-sm">
 					&copy;{new Date().getFullYear()} -{" "}
-					<span className="text-gray-700 text-lg">Alvalens</span>
+					<span className="text-gray-700 text-lg">Vismaya</span>
 				</p>
 			</footer>
 		</div>

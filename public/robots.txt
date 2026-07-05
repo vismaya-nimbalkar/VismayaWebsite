@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.alvalens.my.id
+Host: https://www.nimbalkar.in
 
 # Sitemaps
-Sitemap: https://www.alvalens.my.id/sitemap.xml
+Sitemap: https://www.nimbalkar.in/sitemap.xml

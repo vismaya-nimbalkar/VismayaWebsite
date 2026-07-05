@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const navItems = [
 	{ icon: faHome, label: "Go to Home section", anchor: "home" },
 	{ icon: faUser, label: "Go to About section", anchor: "about" },
-	{ icon: faFolderOpen, label: "Go to Projects section", anchor: "projects" },
+	{ icon: faFolderOpen, label: "Go to Experience section", anchor: "experience" },
 	{ icon: faEnvelope, label: "Go to Contact section", anchor: "contact" },
 ];
 
