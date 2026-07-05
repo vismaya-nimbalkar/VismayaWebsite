@@ -52,7 +52,7 @@ export const metadata = {
 		url: "https://www.nimbalkar.in",
 		title: "Vismaya Nimbalkar | Legal Portfolio",
 		siteName: "Vismaya Nimbalkar | Legal Portfolio",
-		description: "Detail-oriented Law Professional specializing in legal research and compliance.",
+		description: "Detail-oriented Law Student specializing in legal research and compliance.",
 		images: [
 			{
 				url: "/og-image-rev.png", // You can replace this image in the public folder later
@@ -69,7 +69,7 @@ const jsonLd = {
 	"@type": "Person",
 	name: "Vismaya Nimbalkar",
 	url: "https://www.nimbalkar.in",
-	jobTitle: "Law Student & Legal Professional",
+	jobTitle: "Law Student & Aspiring Legal Professional",
 	worksFor: [
 		{ "@type": "Organization", name: "After The Silence" },
 		{ "@type": "Organization", name: "Law Chambers of Lakshmi Menon" },
