@@ -2,6 +2,25 @@
   "Projects": [
     {
       "show": true,
+      "title": "Internship at the Karnataka State Legal Services Authority",
+      "desc": [
+        "Assisted in drafting various documents and engaged in field visits."
+      ],
+      "year": "2025 - Present",
+      "preview": "",
+      "code": "",
+      "thumbnail": "",
+      "images": [],
+      "tech": [
+        "Report Drafting",
+        "Administrative Work",
+        "Field Visits"
+      ],
+      "slug": "legal-internship",
+      "category": [2]
+    },
+    {
+      "show": true,
       "title": "Social Advocacy & Research",
       "desc": [
         "Provided comprehensive support to queer individuals navigating the process of updating legal documents to reflect their correct name and gender identity.",
@@ -25,7 +44,7 @@
     },
     {
       "show": true,
-      "title": "Legal Internship",
+      "title": "Internship at Law Chambers of Lakshmi Menon",
       "desc": [
         "Drafted critical legal documents at the Law Chambers of Lakshmi Menon, including General Power of Attorney (GPA), Writ Petitions, and Memos of Compliance.",
         "Undertook extensive legal research across a wide range of subjects to support ongoing cases and legal strategies.",
@@ -49,7 +68,7 @@
     },
     {
       "show": true,
-      "title": "Administrative Internship",
+      "title": "Internship at the Association of Indian Principals",
       "desc": [
         "Worked extensively with spreadsheets and generated reports for the Association of Indian Principals to analyze administrative problems and develop effective solutions.",
         "Prepared comprehensive project presentations and reports to assist senior staff in strategic planning and execution.",
@@ -72,7 +91,7 @@
     },
     {
       "show": true,
-      "title": "Academic Research: Reproductive Justice",
+      "title": "Research Paper: Reproductive Justice",
       "desc": [
         "Authored and presented an academic paper titled 'Circumscribing Reproductive Justice: A Comparative & Doctrinal Analysis Of Forced Pregnancy Under The Rome Statute'.",
         "Presented research findings at the Gujarat National Law University.",
@@ -95,7 +114,7 @@
     },
     {
       "show": true,
-      "title": "Academic Research: Climate Justice",
+      "title": "Research Paper: Climate Justice",
       "desc": [
         "Authored and presented an academic paper titled 'Climate Justice in the Era of Climate Change: A Comparative & Critical Examination of the Netherlands, South Africa, & India'.",
         "Presented research findings at the West Bengal National University of Juridicial Sciences, Kolkata.",
